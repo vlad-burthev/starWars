@@ -1,0 +1,36 @@
+.person__name {
+  background-color: violet;
+  color: #fff;
+  font-size: 26px;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px 8px 8px 0;
+}
+.content {
+  animation: loading 1s;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  border-left: 5px solid violet;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    margin: 0;
+  }
+}

@@ -1,0 +1,25 @@
+@import "../../../assets/styles/variables";
+
+.btn__container {
+  margin-bottom: 40px;
+
+  .back__btn {
+    background: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    color: var(--color-yellow);
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background-color: #ffffff32;
+      border-radius: 12px;
+    }
+
+    & img {
+      margin-right: 10px;
+    }
+  }
+}

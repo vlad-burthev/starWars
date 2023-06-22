@@ -1,0 +1,24 @@
+@import "../../assets/styles/variables";
+
+.link {
+  margin: auto 0;
+  color: lightblue;
+  font-size: 50px;
+  transition: var(--transition);
+  z-index: 10;
+  background-color: #422acaa6;
+  padding: 40px;
+  border-radius: 12px;
+  line-height: 0;
+
+  .img {
+    width: 100%;
+    display: contents;
+    margin: 0 auto;
+  }
+
+  &:hover {
+    color: rgb(40, 40, 168);
+    background-color: #c7befaa6;
+  }
+}

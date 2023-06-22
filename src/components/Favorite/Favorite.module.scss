@@ -1,0 +1,26 @@
+.favorite {
+  background-color: #fff;
+  border-radius: 12px;
+  transition: 0.3s;
+  & a {
+    display: flex;
+    align-items: center;
+  }
+
+  &:hover {
+    background-color: #ddda36a6;
+  }
+  &:active {
+    transform: scale(0.8);
+  }
+}
+
+.icon {
+  width: 64px;
+}
+.counter {
+  font-size: 30px;
+  color: black;
+
+  padding: 10px;
+}

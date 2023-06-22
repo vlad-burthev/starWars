@@ -1,0 +1,74 @@
+//styles
+@import "reset";
+@import "variables";
+
+:root {
+  font-family: monospace;
+  line-height: 1.5;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.87);
+
+  background: var(--theme-default-bgimage);
+  background-size: 500px;
+  background-position: center center;
+}
+
+body {
+  color: var(--color-white);
+}
+
+html {
+  max-height: 100vh;
+}
+
+.header__text {
+  line-height: 1.7;
+  font-size: var(--font-size-header);
+  text-shadow: 0 0 2px var(--color-black);
+  color: var(--theme-default-header);
+  transition: color var(--transition);
+}
+
+.text {
+  width: 600px;
+  color: var(--color-yellow);
+  text-align: center;
+  font-size: 50px;
+  text-shadow: 0 0 2px var(--color-white);
+
+  -webkit-text-stroke-color: var(--color-yellow);
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-fill-color: transparent;
+}
+
+.scrolling-text {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 9;
+  height: 100%;
+}
+
+.scrolling-text p {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  animation: scroll-up 8s linear infinite;
+  transform-origin: bottom center;
+}
+
+@keyframes scroll-up {
+  0% {
+    bottom: -50%;
+    transform: perspective(100px) rotateX(2deg) scaleY(1) scaleX(2);
+  }
+  100% {
+    bottom: 100%;
+    transform: perspective(100px) rotateX(20deg) scale(1);
+  }
+}

@@ -1,0 +1,23 @@
+.theme__block {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 200px;
+}
+
+.theme {
+  padding: 40px;
+  border: 1px solid #fff;
+  background-color: #fff;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+
+  &:active {
+    transform: scale(0.8);
+  }
+
+  & img {
+    width: 100px;
+  }
+}

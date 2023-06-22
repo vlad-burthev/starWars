@@ -1,0 +1,37 @@
+.button {
+  padding: 5px 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: transparent;
+
+  font-size: 20px;
+  min-width: 100px;
+  border: 1px solid #fff;
+
+  &:disabled,
+  &:disabled:hover {
+    cursor: default;
+    border: 1px solid #000;
+    color: gray;
+    background-color: rgba(128, 128, 128, 0.277);
+  }
+}
+
+.dark {
+  color: #fff;
+
+  &:hover {
+    color: #000;
+    background-color: white;
+  }
+}
+
+.light {
+  background-color: #fff;
+  color: #000;
+
+  &:hover {
+    color: white;
+    background-color: #000;
+  }
+}

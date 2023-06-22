@@ -1,0 +1,46 @@
+.list-item {
+  overflow: hidden;
+  position: relative;
+  width: 200px;
+  margin: 20px 20px 20px 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: rgb(167, 170, 255);
+  border: 1px solid;
+  transition: 0.3s;
+
+  & a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #3511e6;
+    transition: 0.3s;
+  }
+
+  &-photo {
+    overflow: hidden;
+
+    & img {
+      transition: 0.3s;
+    }
+  }
+
+  &-name {
+    text-align: center;
+    padding: 12px;
+  }
+
+  &:hover {
+    .list-item-photo {
+      & img {
+        transform: scale(1.3) translateY(30px);
+        filter: grayscale(0);
+      }
+    }
+
+    & a {
+      text-shadow: 0 0 10px #3511e6;
+    }
+
+    box-shadow: 0 0 12px #b5b5b5;
+  }
+}

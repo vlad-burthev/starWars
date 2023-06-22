@@ -1,0 +1,32 @@
+:root {
+  //цвета
+  --color-white: #fff;
+  --color-black: #000;
+  --color-dark-gray: #10100e;
+  --color-yellow: #ffff00;
+  --color-blue: #6a83fb;
+  --color-violet: #cb6afb;
+  --color-red: red;
+  --color-green: green;
+
+  //шрифты
+  --font-family: monospace;
+  --font-size: 16px;
+  --font-size-header: 26px;
+
+  --font-bold: 600;
+
+  //тени
+  --text-shadow-yellow: 0 0 2px --color-white, 0 0 40px --color-blue;
+  --box-shadow-black: 0 0 40px --color-black;
+
+  //темы
+  --theme-default-header: #cccc46;
+  --theme-green-header: green;
+  --theme-red-header: red;
+  --theme-blue-header: blue;
+  --theme-default-bgimage: url(../images/bgwebp.webp);
+
+  //переход
+  --transition: 0.4s;
+}
