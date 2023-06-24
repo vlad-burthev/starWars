@@ -32,6 +32,11 @@ const routesConfig = [
     component: FavoritesPage,
   },
   {
+    path: "/notfound",
+    exact: true,
+    component: NotFoundPage,
+  },
+  {
     path: "*",
     exact: false,
     component: NotFoundPage,
